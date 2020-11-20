@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registeration</title>
+</head>
+<body>
+
+
+    <h1>Registeration</h1>
+    <br />
+    <form>
+        <label>
+            First Name:    <input type="text" name="fname" id="fname" placeholder="Add First Name">
+        </label>
+
+        <label>
+            Last Name:     <input type="text" name="lname" id="lname" placeholder="Add Last Name">
+        </label><br /><br />
+
+        Email Address: <input type="text" name="email" id="email" placeholder="Add Email"> <br /><br />
+
+        Gender: <input type="radio" name="gender" id="gender" value="male" /> Male
+        <input type="radio" name="gender" id="gender" value="female" /> Female <br /> <br />
+
+        City:   <select name="city" id="city">
+            <option value="">--Select--</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="mirpurkhas">Mirpurkhas</option>
+        </select> <br /><br />
+
+        Hobbies:
+        <input type="checkbox"  id="hobbs" value="Reading Books" /> Reading Books
+        <input type="checkbox"  id="hobbs" value="Watching Movies" /> Watching Movies
+        <!--<input type="checkbox"  id="hobbs" value="Coding" /> Coding <br /><br />-->
+
+        <textarea name="remarks" id="remarks" placeholder="Add Remarks"></textarea> <br /><br />
+
+        <button type="button" onclick="doRegister()">Submit</button>
+        <button type="reset">Submit</button> <br />
+    </form>
+    <br />
+
+    <hr />
+
+    <h1>Submited Response</h1> <br />
+
+    <p>
+        <span id="ofname"></span>
+    </p>
+
+    <p>
+        <span id="olname"></span>
+    </p>
+
+    <p>
+        <span id="oemail"></span>
+    </p>
+
+    <p>
+        <span id="ogender"></span>
+    </p>
+
+    <p>
+        <span id="ocity"></span>
+    </p>
+    
+    <p>
+        <span id="ohoby"></span>
+  
+    </p>
+   
+    <p>
+        <span id="oremarks"></span>
+    </p>
+
+
+    <script src="js/register.js"></script>
+</body>
+</html>
